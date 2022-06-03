@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar"></div>
+        </div>
+        <div class="col d-flex justify-content-between w-100">
+          <!-- First Card -->
+          <div class="first-card">
+            <div class="holdings d-flex justify-content-between">
+              <h5>Holdings</h5>
+              <li><a href="/">View Prices</a></li>
+            </div>
+            <div class="dollars mt-2">
+              <div class="d-flex">
+                <img
+                  class="dollar-img"
+                  src="./assets/img/usd.png"
+                  alt=""
+                  srcset=""
+                />
+
+                <h3 class="dollar-title">US Dollars</h3>
+              </div>
+
+              <div class="price">
+                <p class="usd">US$1,000,000</p>
+                <span class="mini-usd">US$0.00</span>
+              </div>
+            </div>
+            <hr />
+            <div class="dollars mt-2">
+              <div class="d-flex">
+                <img
+                  class="dollar-img"
+                  src="./assets/img/gbp.png"
+                  alt=""
+                  srcset=""
+                />
+
+                <h3 class="dollar-title">US Dollars</h3>
+              </div>
+
+              <div class="price">
+                <p class="usd">US$1,000,000</p>
+                <span class="mini-usd">US$0.00</span>
+              </div>
+            </div>
+            <hr />
+            <div class="dollars mt-2">
+              <div class="d-flex">
+                <img
+                  class="dollar-img"
+                  src="./assets/img/eur.png"
+                  alt=""
+                  srcset=""
+                />
+
+                <h3 class="dollar-title">US Dollars</h3>
+              </div>
+
+              <div class="price">
+                <p class="usd">US$1,000,000</p>
+                <span class="mini-usd">US$0.00</span>
+              </div>
+            </div>
+            <hr />
+            <div class="dollars mt-2">
+              <div class="d-flex">
+                <img
+                  class="dollar-img"
+                  src="./assets/img/logo.png"
+                  alt=""
+                  srcset=""
+                />
+
+                <h3 class="dollar-title">US Dollars</h3>
+              </div>
+
+              <div class="price">
+                <p class="usd">US$1,000,000</p>
+                <span class="mini-usd">US$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- seccond Card -->
+          <div class="bitcion-card">
+            <div class="amount-holder d-flex justify-content-between">
+              <div class="btc-amount">
+                <div class="btc-with-img">
+                  <img
+                    src="./assets/img/logo.png"
+                    class="btc-img"
+                    alt=""
+                    srcset=""
+                  />
+                  <h3>Bitcoin (BTC)</h3>
+                </div>
+                <p class="btc-in-price">US$30,556.64</p>
+                <p class="rising">$726.56 (2.44)%</p>
+              </div>
+              <div class="buy-buttons">
+                <button class="buyButton">Buy Bitcoin</button>
+                <button class="swapButton">Swap Bitcoin</button>
+              </div>
+            </div>
+            <div class="chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
