@@ -1,5 +1,5 @@
 .sidebar {
-  border: 2px solid blue;
+  //   border: 2px solid blue;
 }
 
 .first-card {
@@ -140,11 +140,41 @@
       border-width: 1px;
       border-color: rgb(12, 108, 242);
     }
-    .swapButton{
-       
+    .swapButton {
+      width: auto;
+      min-width: 140px;
+      height: 42px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      user-select: none;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      letter-spacing: normal;
+      transition: all 0.2s ease-in-out 0s;
+      white-space: nowrap;
+      line-height: 1;
+      text-transform: none;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      opacity: 1;
+      color: rgb(12, 108, 242);
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(12, 108, 242);
+    }
+  }
+}
+.headerButtons {
+  .sendButton {
     width: auto;
-    min-width: 140px;
-    height: 42px;
+    min-width: 86px;
+    height: 32px;
     padding: 10px 15px;
     box-sizing: border-box;
     user-select: none;
@@ -156,7 +186,8 @@
     white-space: nowrap;
     line-height: 1;
     text-transform: none;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -166,7 +197,209 @@
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(12, 108, 242);
+    border-color: rgb(223, 227, 235);
+  }
+  .tradeButton {
+    background-image: radial-gradient(
+      at right bottom,
+      rgb(33, 202, 224) 0%,
+      rgb(89, 95, 238) 80%
+    );
+    color: white;
+    width: 88px;
+    min-width: 88px;
+    height: 32px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.headerRightIcons {
+  .userAccount {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px 12px;
+    button {
+      position: relative;
+      transition: color 0.3s ease 0s;
+      background: transparent;
+      min-width: auto;
+      width: auto;
+      padding: 0px;
+      border: 0px;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+
+      height: 40px;
+      box-sizing: border-box;
+      user-select: none;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      letter-spacing: normal;
+      white-space: nowrap;
+      line-height: 1;
+      text-transform: none;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      opacity: 1;
+      color: rgb(53, 63, 82);
+      border-radius: 8px;
     }
+    svg {
+      color: rgb(53, 63, 82);
+    }
+  }
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  margin: 0px;
+  padding: 0px 0px 0px 24px;
+  cursor: pointer;
+
+  .nav-link {
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 10px;
+    &:hover {
+      background-color: rgb(236, 245, 254); // padding: 5px 8px;
+      border-radius: 4px;
+    }
+    &.active {
+      background-color: rgb(236, 245, 254);
+      border-radius: 4px;
+    }
+  }
+}
+.topPart {
+  .totalBalance {
+    h3 {
+      margin-right: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(103, 113, 132);
+      line-height: 150%;
+      margin: 0;
+    }
+    b {
+      color: rgb(53, 63, 82);
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  .droppy {
+    border: 1px solid rgb(223, 227, 235);
+    color: rgb(152, 161, 178);
+    height: 21px;
+    padding: 0;
+    width: 22px;
+  }
+}
+.homeTab {
+  padding: 10px 8px 10px 8px;
+
+  h3 {
+    color: rgb(13, 53, 120);
+    white-space: nowrap;
+    font-size: 18px;
+    padding-left: 8px;
+    margin: 0;
+    // padding-top: 2px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background-color: rgb(236, 245, 254); // padding: 5px 8px;
+    border-radius: 4px;
+  }
+  &.active {
+    background-color: rgb(236, 245, 254);
+    border-radius: 4px;
+  }
+}
+.coinTab {
+  padding: 10px 8px 10px 8px;
+
+  h3 {
+    color: rgb(13, 53, 120);
+    white-space: nowrap;
+    font-size: 18px;
+    padding-left: 8px;
+    margin: 0;
+    // padding-top: 2px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background-color:rgba(0, 178, 107, 0.25); // padding: 5px 8px;
+    border-radius: 4px;
+  }
+  &.active {
+    background-color:rgba(0, 178, 107, 0.25);
+    border-radius: 4px;
+  }
+}
+.btcTab {
+  padding: 10px 8px 10px 8px;
+
+  h3 {
+    color: rgb(13, 53, 120);
+    white-space: nowrap;
+    font-size: 18px;
+    padding-left: 8px;
+    margin: 0;
+    // padding-top: 2px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background-color:rgba(255, 155, 34, 0.25); // padding: 5px 8px;
+    border-radius: 4px;
+  }
+  &.active {
+    background-color:rgba(255, 155, 34, 0.25);
+    border-radius: 4px;
+  }
+}
+.portFolio {
+  justify-content: space-between;
+  p {
+    margin: 0;
+    padding-right: 6px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+    font-style: normal;
+    color: rgb(103, 113, 132);
+    cursor: inherit;
+    display: block;
+    opacity: 1;
+  }
+  hr{
+      margin: 10px 0;
+      color: rgb(216, 221, 236);
   }
 }
